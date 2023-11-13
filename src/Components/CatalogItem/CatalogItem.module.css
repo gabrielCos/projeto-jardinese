@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../../Static/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(../../Static/fonts/Poppins-Light.ttf);
+}
+
+.item {
+    display: flex;
+    width: 317px;
+    height: 103px;
+    background-color: #E7DEC0;
+    box-shadow: 2px 2px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+}
+
+.plant {
+    height: 80px;
+    margin-top: 15px;
+}
+
+.itemName{
+    font-family: 'Poppins-SemiBold';
+    font-size: 20px;
+    color: #5DB075;
+    text-align: left;
+}
+
+.itemPrice{
+    font-family: 'Poppins-SemiBold';
+    color: white;
+    background-color: #5DB075;
+    height: 20px;
+    padding: 0 5px 3px 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-left: 30px;
+}
+
+.itemStore {
+    position: relative;
+    bottom: 15px;
+    font-family: 'Poppins-Light';
+    font-size: 12px;
+    color: #5DB075;
+    text-align: left;
+}
+
+.itemButton {
+    position: relative;
+    bottom: 15px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 10px;
+    color: white;
+    background-color: #FC8660;
+    border: solid 1px #FC8660;
+    border-radius: 4px;
+    padding: 5px 5px ;
+}

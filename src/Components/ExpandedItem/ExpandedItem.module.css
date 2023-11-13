@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../../Static/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../../Static/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(../../Static/fonts/Poppins-Light.ttf);
+}
+
+.itemExpanded {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principalImg {
+    height: 280px;
+    background-color:  rgba(9,121,41,.5);
+    margin-top: 60px;
+}
+
+.title{
+    display: flex;
+}
+
+.name {
+    font-family: 'Poppins-Bold';
+    font-size: 32px;
+    color:  #5DB075;
+    margin-top: 0;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 10vh;
+}
+
+.value {
+    font-family: 'Poppins-Bold';
+    font-size: 32px;
+    color: white;
+    background-color: #5DB075;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    width: 110px;
+}
+
+.value span{
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.conditions {
+    font-family: 'Poppins-SemiBold';
+    font-size: 10px;
+    color: #5DB075;
+    position: relative;
+    margin-top: -3vh;
+}
+
+.parcelas {
+    font-family: 'Poppins-SemiBold';
+    font-size: 10px;
+    position: relative;
+    margin-top: -2vh;
+}
+
+.espec {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 10vh;
+}
+
+.espec img {
+    margin-right: 20px;
+}
+
+.espec span {
+    font-family: 'Poppins-SemiBold';
+    font-size: 8px;
+    color: #5DB075;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.description {
+    width: 290px;
+}
+
+.description h1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 11px;
+    position: relative;
+    bottom: 10vh;
+}
+
+.description p{
+    font-family: 'Poppins-SemiBold';
+    font-size: 8px;
+    position: relative;
+    bottom: 10vh;
+}
+
+.button{
+    position: relative;
+    bottom: 9vh;
+    padding: 4px 0 4px 0;
+    background-color: #FC8660;
+    font-family: 'Poppins-Bold';
+    color: white;
+    border: #FC8660 solid 2px;
+    border-radius: 5px;
+}

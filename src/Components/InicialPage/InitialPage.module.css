@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../../Static/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../../Static/fonts/Poppins-SemiBold.ttf);
+}
+
+.initialPlant {
+    position: relative;
+    bottom: 27vh;
+}
+
+.shape {
+    position: relative;
+    top: 10vh;
+}
+
+.welcomeText {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 30px;
+    position: relative;
+    bottom: 30vh;
+}
+
+.text {
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 16px;
+    position: relative;
+    bottom: 33vh;
+}
+
+.initialButton {
+    position: relative;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: #5DB075;
+    bottom: 35vh;
+    border: 2px solid #5DB075;
+    border-radius: 100px;
+    padding: 10px 30px 10px 30px;
+    outline: none;
+}
+
+.bottomText {
+    font-family: 'Poppins-SemiBold', sans-serif;
+    position: relative;
+    bottom: 35vh;
+    text-decoration: underline;
+}

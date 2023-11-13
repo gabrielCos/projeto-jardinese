@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  justify-content: center;
+  height: 710px;
+  width: 375px;
+  background-color: #F7EED1;
+  border-radius: 30px;
+}
+
+#plantShape {
+  position: absolute;
+  right: 38vw;
+}
+
+
+

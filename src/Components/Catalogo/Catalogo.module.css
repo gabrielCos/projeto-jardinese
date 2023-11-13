@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../../Static/fonts/Poppins-SemiBold.ttf);
+}
+
+.catalogo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+    left: 570px;
+}
+
+.catalogheader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+
+.title {
+    font-family: 'Poppins-SemiBold';
+    font-size: 28px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: space-around;
+    width: 318px;
+    height: 36px;
+    outline: none;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: #E7DEC0;
+    border: 1px solid #E7DEC0;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, .2);
+    
+}
+
+.inputSearchBar{
+    background-color: #E7DEC0;
+    border: 1px solid #E7DEC0;
+    outline: none;
+    width: 270px;
+    font-family: 'Poppins-SemiBold';
+}
+
+.line {
+    height: 1px;
+    width: 318px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-bottom: 5px;
+}
+
+.plantlist {
+    list-style-type: none;
+    margin-right: 40px;
+}
