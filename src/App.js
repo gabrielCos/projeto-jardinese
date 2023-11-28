@@ -1,48 +1,49 @@
-import './App.css';
+import "./App.css";
 
-import InitialPage from './Components/InicialPage/InitialPage';
-import Catalogo from './Components/Catalogo/Catalogo';
-import ExpandedItem from './Components/ExpandedItem/ExpandedItem';
+import React, { useEffect, useState } from "react";
+import Router from "../src/routes/index";
+import {collection, getDocs } from "firebase/firestore";
+import { db } from "./firebaseConfig";
 
-import plantShape from '../src/Static/PlantasInitialPage/VectorPlant.png'
-import { useState } from 'react';
+import Footer from "./Components/Footer/Footer";
 
-const DUMMY_PLANTS = [
-  {
-    id: "p1",
-    name: "Jiboia",
-    price: 33.99,
-    store: "Vet Fauna Pet Shop",
-  },
-  {
-    id: "p2",
-    name: "Orquídea",
-    price: 100.99,
-    store: "Plutu's Pet Shop",
-  },
-  {
-    id: "p3",
-    name: "Lírio da paz",
-    price: 16.99,
-    store: "Girassol Pet Shop",
-  },
-  {
-    id: "p4",
-    name: "Samambaia",
-    price: 50.0,
-    store: "Mil Bichos Pet Shop",
-  },
-];
+import plantShape from "../src/Static/PlantasInitialPage/VectorPlant.png";
+
+const fetchStorePlantsFromFirestore = async () => {
+  const querySnapshot = await getDocs(collection(db, "vendas"));
+  const temporaryArr = [];
+  querySnapshot.forEach((doc) => {
+    temporaryArr.push(doc.data());
+  });
+  return temporaryArr
+};
+
+const fetchWikiPlantsFromFirestore = async () => {
+  const querySnapshot = await getDocs(collection(db, "catalogacao"));
+  const temporaryArr = [];
+  querySnapshot.forEach((doc) => {
+    temporaryArr.push(doc.data());
+  });
+  return temporaryArr
+};
 
 function App() {
+  const [storePlants, setStorePlants] = useState([]);
+  const [wikiPlants, setWikiPlants] = useState([])
 
-  const [plants, setPlants] = useState(DUMMY_PLANTS)
-  
+  useEffect(() => {
+    fetchStorePlantsFromFirestore().then((data) => setStorePlants(data))
+  }, [])
+
+  useEffect(() => {
+    fetchWikiPlantsFromFirestore().then((data) => setWikiPlants(data))
+  }, [])
+
   return (
-    <div className="App" style={{zIndex: 1}}>
-      <img id='plantShape' src={plantShape} alt='uma folha' style={{zIndex: 2}}/>
-      {/*<Catalogo plants={plants}/>*/}
-      <ExpandedItem item={plants}/>
+    <div className="App" style={{ zIndex: 1 }}>
+      <img id="plantShape" src={plantShape} alt="uma folha" />
+      <Router plants={storePlants} wikiPlants={wikiPlants} />
+      {<Footer />}
     </div>
   );
 }

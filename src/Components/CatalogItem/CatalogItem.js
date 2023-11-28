@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom"
 
 import styles from './CatalogItem.module.css'
 
@@ -20,7 +21,7 @@ const CatalogItem = (props) => {
 
     return (
         <li>
-            <div className={styles.item}>
+            <Link to="/gardenItem" className={styles.linkUnderline}><div className={styles.item}>
                 <HeartFilled onClick={favoriteHandler}  style={{position: "absolute", color: isfavorite}} />
                 <img src={itemIcon} className={styles.plant}/>
                 <div>
@@ -31,7 +32,7 @@ const CatalogItem = (props) => {
                     </div>
                 </div>
                 <p className={styles.itemPrice}> <span style={{fontSize: 10, position: "relative", bottom: 5}}>R$</span>{props.price}</p> 
-            </div>
+            </div></Link>
         </li>
     )
 }

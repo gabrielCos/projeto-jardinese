@@ -16,9 +16,9 @@ const Catalogo = (props) => {
     return (
         <div className={styles.catalogo}>
             <div className={styles.catalogheader} >
-                <ArrowLeftOutlined style={{color: "white", fontSize:20, backgroundColor: "#5DB075", borderRadius: 30, padding: 10, height:20, marginRight:35, marginTop: 15}} />
+                <ArrowLeftOutlined style={{color: "white", fontSize:20, backgroundColor: "#5DB075", borderRadius: 30, padding: 10, height:20, marginTop: 15}} />
                 <h1 className={styles.title} >Garden Center</h1>
-                <img style={{height: 40, marginLeft: 30, marginTop: 8}} src={centerItem} />
+                <img style={{height: 40, marginLeft: 0, marginTop: 8}} src={centerItem} />
             </div>
             <div className={styles.searchBar}>
                 <SearchOutlined style={{marginTop: 10}}/>

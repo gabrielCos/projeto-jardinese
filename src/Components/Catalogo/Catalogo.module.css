@@ -16,13 +16,15 @@
 
 .catalogheader {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 8vh;
 }
 
 .title {
     font-family: 'Poppins-SemiBold';
     font-size: 28px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .searchBar {

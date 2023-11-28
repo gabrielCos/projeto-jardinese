@@ -8,6 +8,17 @@
     src: url(../../Static/fonts/Poppins-SemiBold.ttf);
 }
 
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.initialPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .initialPlant {
     position: relative;
     bottom: 27vh;
